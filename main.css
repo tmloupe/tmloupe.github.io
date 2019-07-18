@@ -1,0 +1,149 @@
+/* Main CSS. Run through autoprefixer, a great tool for vendor prefixes.
+   https://autoprefixer.github.io/ */
+
+body {
+    font-family: 'Muli', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Maitree', serif;
+    font-weight: 300;
+    text-align: center;
+}
+
+.bold {
+    font-weight: 500;
+}
+
+.bgimg {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(26, 68, 84, .3)), to(rgba(26, 68, 84, .3))), url("bg_texture.png");
+    background: -webkit-linear-gradient(top, rgba(26, 68, 84, .3), rgba(26, 68, 84, .3)), url("bg_texture.png");
+    background: -o-linear-gradient(top, rgba(26, 68, 84, .3), rgba(26, 68, 84, .3)), url("bg_texture.png");
+    background: linear-gradient(to bottom, rgba(26, 68, 84, .3), rgba(26, 68, 84, .3)), url("bg_texture.png");  
+    /* Background pattern from Toptal Subtle Patterns: https://www.toptal.com/designers/subtlepatterns/dust-scratches/ */
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.container > div {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: calc(1/2*100% - (1 - 1/2)*40px);
+    text-align: center;
+}
+
+.container-col {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.text {
+    line-height: 1.5;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+}
+
+.text-links {
+    text-align: center;
+}
+
+.container-col {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.bg-white {
+    background-color: rgba(255,255,255, .2);
+}
+
+.pad-bot-10 {
+    padding-bottom: 10px;
+}
+
+.github {
+    line-height: inherit !important;
+    opacity: .5;
+    color:  #245a72;
+    -webkit-transition: opacity .2s ease;
+    -o-transition: opacity .2s ease;
+    transition: opacity .2s ease;
+}
+
+.github:hover {
+    opacity: 1;
+    color: #245a72;
+}
+
+a {
+    text-decoration: none;
+    opacity: .8;
+    color: #765619;
+    -webkit-transition: opacity .2s ease;
+    -o-transition: opacity .2s ease;
+    transition: opacity .2s ease;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+.portfolio-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.space {
+    padding: 15px;
+}
+
+@media screen and (max-width: 648px){
+    .portfolio-img {
+        width: 100%;
+        height: 100%;
+    }
+}
